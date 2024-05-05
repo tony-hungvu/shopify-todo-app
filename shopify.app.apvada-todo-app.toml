@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "c057368d15205a13c302cc860da88639"
+name = "Avada-todo-app"
+handle = "avada-todo-app"
+application_url = "https://lessons-assumed-lanka-dramatically.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-c1e09ed3.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = ""
+
+[auth]
+redirect_urls = [
+  "https://lessons-assumed-lanka-dramatically.trycloudflare.com/auth/callback",
+  "https://lessons-assumed-lanka-dramatically.trycloudflare.com/auth/shopify/callback",
+  "https://lessons-assumed-lanka-dramatically.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
